@@ -1,0 +1,80 @@
+(1) CSS is ths cascading style sheet. it is simple design language intended to simplify the process of making web page layout presentable.
+Types of Selectors in n CSS
+   1.type/tag Selectors
+   2.id Selectors
+   3.class Selectors
+   4.grouping Selectors
+   5.customized selectors
+
+
+(2) CSS box model is essential box model that wrap around all the html elements it is used to define the element's  dimension and spacing. it consist content,padding,border and margin
+  content: content of box where text and images are include
+  padding: clears area around the content it is transparent
+  border: it goes around the content and padding
+  margin: clears area outside the border it is transparent  
+
+
+
+(3)
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Student Registration Form</h1>
+  <form action="">
+  <label for="name">First Name</label>
+  <div>
+      <input type="text"name="firstName"id="firstname">
+  </div>
+  <br>
+  <label for="role">Last Name</label>
+  <div>
+      <input type="text" name="lastName" id="lastname">
+  </div>
+  <br>
+  <label for="role">Middle Name</label>
+  <div>
+      <input type="text" name="middleName" id="middlename">
+  </div>
+  <br>
+  <div>
+    <label for="car">Course Selection</label>
+    <select name="myCourse" id="course">
+    <option value="engineering"selected>Engineering</option>
+    <option value="commerce">Commerce</option>
+</select>
+</div>
+<br>
+<div>
+  Gender: Male <input type="radio" name="myGender">Female <input type="radio" name="myGender">other <input type="radio" name="myGender">
+</div>
+<br>
+<div>
+  <input type="submit" value="Submit Now">
+  <input type="reset" value="Reset Now">
+</div>
+<br>
+</form>
+</body>
+</html>
+
+
+(4) List Types
+
+
+  (i) Ordered List: it is also called numbering list it is used to give a number to list items it is paired tag.there are types like 1,a,A,I,i 
+  syntax: <ol>......</ol>
+
+  (ii) UnOrdered List: it is also called bulleting list it is used to give a bullet to list items it is paired tag.there are types like circle,disc,square 
+  syntax: <ul>......</ul>
+
+  (iii)Defination List: it is also called descriptive list it is used to give a defination to defination terms.
+  syntax:
+  <dl>
+    <dt>....</dt>
+    <dd>.....</dd>
+  </dl>
