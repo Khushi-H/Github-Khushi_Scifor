@@ -1,0 +1,98 @@
+(1) Formatting Tags in HTML
+    <b> - Bold text
+    <i> - italic text
+    <strong> - important text  
+    <em> - emphasized text     
+    <mark> - marked text 
+    <small> - smaller text 
+    <sub> - subscript text 
+    <del> - deleted text 
+    <sup> - superscript text 
+        
+        
+(2) Merge two rows and columns into single row and column with code:
+  we use colspan and rowspan for merging into single row and column in <td> tag or <th> tag as attribute.colspan value determines how many columns you should merge into single cell.for horizontal merging apply colspan.and for vertically use rowspan which specify the no of rows to merge.
+    code: colspan
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1px">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>Mohan</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Rakesh</td>
+                <td>Mahesh</td>
+                <td>26</td> 
+            </tr>
+        </table>
+    </body>
+    </html> 
+    
+    code: rowspan
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <table border="1px">
+            <tr>
+                <th>Name</th>
+                <td>Mohan</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Phone</th>
+                <td>1234567890</td>
+            </tr>
+            <tr>
+                <td>23456728679</td>
+            </tr>
+        </table>
+    </body>
+    </html>
+
+
+(3) cellspacing defines the space between individual adjacent cells. while cellpadding defines the space between table cell's border and content present in it.
+
+
+(4) semantic tags clearly describes its meaning to us.It describes their purpose and type of their content.
+ex. <h1> to <h6>,<table>,<header>,<footer> etc...
+
+
+(5) code for background image:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            background-image:url('https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg');
+        }
+    </style>
+</head>
+<body>
+    <h2>Image</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus eius odio inventore provident numquam tempora error quasi, optio libero voluptas.</p>
+</body>
+</html> 
+
+
+(6) alt attribute specifies an alternate text for area if image can't be displayed. it provides alternative information for an image if user for some reason can't view it.
