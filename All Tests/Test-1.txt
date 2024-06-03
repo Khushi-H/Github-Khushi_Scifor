@@ -1,0 +1,28 @@
+(1) HTML stands for HyperText Markup Language. It's the standard markup language for creating and structuring web pages and web applications. HTML provides a set of markup tags or elements that are used to define the structure and content of a webpage. These elements include headings, paragraphs, lists, links, images, tables, forms, and more.
+
+
+(2) Features of HTML:
+    (i) HTML provides a structured way to organize content on a web page using elements like headings, paragraphs, lists, and more. This structure helps browsers understand the layout and hierarchy of the content.
+    (ii) HTML provides form elements like <input>, <textarea>, <select>, and <button> to create interactive forms for collecting user input.
+    (iii) HTML allows you to create hyperlinks using the <a> (anchor) element, enabling navigation between different pages and resources on the web.
+    (iv) HTML supports embedding multimedia content such as images, audio, and video using elements like <img>, <audio>, and <video>.
+
+
+(3) MIME (Multipurpose Internet Mail Extensions) is an Extension of an original SMTP Mail protocol.It lets users exchange different kinds of data files.
+
+
+(4)  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Hello Everyone !!</h1>
+ 
+</body>
+</html>
+
+
+(5) Void element can't have any child nodes.it has only open tag not close tag.
