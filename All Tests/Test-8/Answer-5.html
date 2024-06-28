@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulated String</title>
+</head>
+<body>
+    <script>
+        function manipulateArray(arr) {
+    // Step a: Add a new string "VOLVO" to the end of the array
+    arr.push("VOLVO");
+
+    // Step b: Remove the last element from the array
+    arr.pop();
+
+    // Step c: Iterate over each element and convert each element to uppercase
+    arr = arr.map(element => element.toUpperCase());
+
+    // Step d: Join all elements into a single string separated by commas
+    let joinedString = arr.join(', ');
+
+    // Return the joined string
+    return joinedString;
+}
+
+
+var stringsArray = ["apple", "banana", "cherry"];
+var manipulatedString = manipulateArray(stringsArray);
+document.write("Updated String is :"+manipulatedString);
+
+    </script>
+</body>
+</html>

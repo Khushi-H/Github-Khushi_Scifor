@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object</title>
+</head>
+<body>
+    <script>
+        function formatString(inputString) {
+    // Step a: Convert the entire string to uppercase
+    var upperCaseString = inputString.toUpperCase();
+
+    // Step b: Convert the entire string to lowercase
+    var lowerCaseString = inputString.toLowerCase();
+
+    // Step c: Extract a substring from index 2 to 5 (inclusive)
+    var substring = inputString.substring(2, 6); // endIndex is exclusive, so use 6 to include index 5
+
+    // Return an object containing the transformed strings
+    return {
+        upperCase: upperCaseString,
+        lowerCase: lowerCaseString,
+        substring: substring
+    };
+}
+
+
+var input = "HelloWorld";
+var formattedStrings = formatString(input);
+document.write("Uppercase String:"+formattedStrings.upperCase);
+document.write("<br>");
+document.write("Lowercase String:"+formattedStrings.lowerCase);
+document.write("<br>");
+document.write("Substring:"+formattedStrings.substring); 
+document.write("<br>");
+    </script>
+</body>
+</html>

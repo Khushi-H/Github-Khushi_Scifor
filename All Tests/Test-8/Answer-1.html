@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Object</title>
+</head>
+<body>
+    <script>
+        function adjustDate(inputDate) {
+    // Step a: Get the current month from the date object
+    var currentMonth = inputDate.getMonth() + 1; // JavaScript months are zero-indexed (0 for January)
+    
+    // Step b: Set the month of the date object to the next month
+    var nextMonth = currentMonth + 1;
+    var nextYear = inputDate.getFullYear();
+    if (nextMonth > 12) {
+        nextMonth = 1;
+        nextYear++;
+    }
+    
+    // Create a new date object with the adjusted month and year
+    var adjustedDate = new Date(nextYear, nextMonth - 1, 1); // Setting day to 1 since it will be adjusted later
+    
+    // Step c: Set the date of the date object to the 15th of the current month
+    adjustedDate.setDate(15);
+    
+    // Step d: Get the full year of the adjusted date object
+    let adjustedYear = adjustedDate.getFullYear();
+    
+    return adjustedYear;
+}
+
+
+var inputDate = new Date(2024, 5, 8); // Months are zero-indexed (5 represents June)
+var adjustedYear = adjustDate(inputDate);
+document.write("The full year of the adjusted date object is:"+ adjustedYear);
+
+    </script>
+</body>
+</html>

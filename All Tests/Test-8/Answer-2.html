@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Of Characters</title>
+</head>
+<body>
+    <script>
+        function countCharacters(arr) {
+    // Create an empty object to store character counts
+    let charCount = {};
+
+    // Loop through each character in the array
+    arr.forEach(char => {
+        // If the character is already in charCount, increment its count
+        // Otherwise, initialize its count to 1
+        charCount[char] = (charCount[char] || 0) + 1;
+    });
+
+    // Return the object containing character counts
+    return charCount;
+}
+
+// Example usage:
+const characters = ['a', 'b', 'a', 'c', 'b', 'a', 'd'];
+const counts = countCharacters(characters);
+console.log(counts);
+
+    </script>
+</body>
+</html>
