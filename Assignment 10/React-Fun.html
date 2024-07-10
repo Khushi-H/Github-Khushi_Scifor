@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+    ></script>
+    <title>React-Function Component</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      function Display() {
+        const app = () => {
+          var num1 = parseFloat(prompt("Enter 1st Number"));
+          var num2 = parseFloat(prompt("Enter 2nd Number"));
+          var result = document.write(
+            "The Result is :" + "<br>" + (num1 + num2)
+          );
+        };
+        return (
+          <div>
+            <h1>Hello</h1>
+            <p>
+              Add two numbers with React Function Component by clicking on
+              button
+            </p>
+            <button onClick={app}>Add Two Numbers</button>
+          </div>
+        );
+      }
+      ReactDOM.render(<Display />, document.getElementById("root"));
+    </script>
+  </body>
+</html>
