@@ -1,0 +1,50 @@
+<!-- to compile and return the react component -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- to development of react app -->
+<script
+  crossorigin
+  src="https://unpkg.com/react@16/umd/react.production.min.js"
+></script>
+
+<!-- to render the component inside the browser -->
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+></script>
+<div id="root"></div>
+<script type="text/babel">
+  // to create class component using extends keyword
+  class ClassComponent extends React.Component {
+    render() {
+      // function for heading style
+      const headingStyle = {
+        color: "Green",
+        fontSize: "30px",
+        backgroundColor: "yellow",
+        display: "inline-block",
+      };
+
+      //   function for paragraph style
+      const paragraphStyle = {
+        fontStyle: "bolder",
+        color: "red",
+        fontSize: "20px",
+        fontWeight: "600",
+      };
+
+      return (
+        <div>
+          <h2 style={headingStyle}>React Class Component:</h2>
+          <p style={paragraphStyle}>
+            This paragraph is styled with inline CSS.Inline styling using two
+            const functions headingStyle and paragraphStyle.
+          </p>
+        </div>
+      );
+    }
+  }
+
+  //   render ClassComponent using render method
+  ReactDOM.render(<ClassComponent />, document.getElementById("root"));
+</script>

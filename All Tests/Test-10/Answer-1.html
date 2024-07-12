@@ -1,0 +1,56 @@
+<!-- to compile and return the react component -->
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<!-- to development of react app -->
+<script
+  crossorigin
+  src="https://unpkg.com/react@16/umd/react.production.min.js"
+></script>
+
+<!-- to render the component inside the browser -->
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+></script>
+<div id="root"></div>
+<script type="text/babel">
+  // to pass user info using props
+  const UserDetails = (props) => {
+    return (
+      <div>
+        <p>Name: {props.name}</p>
+        <p>Age: {props.age}</p>
+        <p>Email: {props.email}</p>
+        <p>Mobile No: {props.mobileNo}</p>
+        <p>City: {props.city}</p>
+      </div>
+    );
+  };
+
+  //   create normalfunction & add user info (attribute) as variable
+  const NormalFunction = () => {
+    const user = {
+      name: "Khushi Parekh",
+      age: 23,
+      email: "khushi@mail.com",
+      mobileNo: "7345263456",
+      city: "Baroda",
+    };
+
+    return (
+      <div>
+        <h1>User Details Info :</h1>
+        <UserDetails
+          name={user.name}
+          age={user.age}
+          email={user.email}
+          mobileNo={user.mobileNo}
+          city={user.city}
+        />
+      </div>
+    );
+  };
+
+  //   to render normalfunction using render method
+  ReactDOM.render(<NormalFunction />, document.getElementById("root"));
+</script>
