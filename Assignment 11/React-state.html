@@ -1,0 +1,46 @@
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+<script
+  crossorigin
+  src="https://unpkg.com/react@16/umd/react.production.min.js"
+></script>
+<script
+  crossorigin
+  src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"
+></script>
+<div id="root"></div>
+
+<script type="text/babel">
+  class User extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {
+        Name: "Khushi",
+        Lname: "Parekh",
+        Email: "khushi@mail.com",
+      };
+    }
+    Name = () => {
+      this.setState({ Name: "jinali" });
+    };
+
+    render() {
+      return (
+        <div>
+          <h1>Hello Everyone !!!</h1>
+          <h3>My Name is {this.state.Name}</h3>
+          <p>
+            We learn state component and using setState method we can update any
+            object's property.. My email id is {this.state.Email}
+          </p>
+          <button type="button" onClick={this.Name}>
+            {" "}
+            Click Here To change Name
+          </button>
+        </div>
+      );
+    }
+  }
+
+  ReactDOM.render(<User />, document.getElementById("root"));
+</script>
