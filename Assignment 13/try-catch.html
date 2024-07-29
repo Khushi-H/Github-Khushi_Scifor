@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Try-Catch Block</h2>
+  </body>
+  <script>
+    async function f1() {
+      try {
+        const response = await fetch("https://dummyjson.com/user/1");
+        const data = await response.json();
+        console.log("data fetch successfully");
+      } catch (error) {
+        console.log("some error occured");
+      }
+    }
+    f1();
+  </script>
+</html>
